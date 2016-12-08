@@ -10,4 +10,4 @@ http://browser.thescene.co
 
 http://docs.thescene.co
 
-This software is published under the Apache 2 license. See https://www.apache.org/licenses/LICENSE-2.0 for details.
+This software is published under the GNU Lesser General Public License. See https://www.gnu.org/licenses/lgpl-3.0.en.html for details.
