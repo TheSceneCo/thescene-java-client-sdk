@@ -13,6 +13,7 @@ public class LocationResource extends ResourceSupport {
 	public static final class Rels {
 		public static final String LOCATION = "location";
 		public static final String SELF = "self";
+		public static final String PROFILE = "profile";
 	}
 	
 	private String latitude;

@@ -37,7 +37,7 @@ public class LocationClient {
 
 	public LocationResource removeLocationFromProfile(ProfileResource profile, LocationResource tag){
 		ParameterizedTypeReference<Resources<LocationResource>> resourceParameterizedTypeReference = new ParameterizedTypeReference<Resources<LocationResource>>() {};
-		return service.delete(LocationResource.class, tag, LocationResource.Rels.SELF, resourceParameterizedTypeReference);
+		return service.delete(LocationResource.class, tag, LocationResource.Rels.PROFILE, resourceParameterizedTypeReference);
 	}
 	
 }
