@@ -2,6 +2,8 @@
  Copyright (C) 2012 - 2016 TheScene.Co
  This file is part of TheScene.Co Java Client SDK.
 
+ Authors: John Deverall, Georgy Popov.
+
  TheScene.Co Java Client SDK is free software: you can redistribute it and/or modify
  it under the terms of the GNU Lesser General Public License as published by
  the Free Software Foundation, either version 3 of the License, or
