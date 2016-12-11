@@ -42,7 +42,7 @@ All API Access can be handled through the SceneClient interface. The SceneClient
 * Management of hal+json hateoas links and rels.
 * The caching of base 'rels'. Links that will not change during the course of a single session of API usage. 
 
-###1. To log in using the client library and oauth2 client credentials
+###1. To get a client credentials access token using the java api client library
 
 ```
 SceneClient.configureClientContext().setBaseUrl("http://api.thescene.co")
@@ -51,7 +51,7 @@ SceneClient.configureClientContext().setBaseUrl("http://api.thescene.co")
 SceneClient.getClientContext().exchangeClientCredentialsForAccessToken();
 ```
 
-###2. To upgrade with oauth2 resource owner credentials
+###2. To get a resource owner access token using the java api client library (using resource owner's credentials)
 
 ```
 SceneClient.getClientContext().exchangeResourceOwnerCredentialsForAccessToken(registeredMember.getEmail(),
@@ -60,14 +60,14 @@ SceneClient.getClientContext().exchangeResourceOwnerCredentialsForAccessToken(re
 
 ###3. To register a new member
 
-First establish a client credentials authentication token. Then you can do like the following.
+First you need a client credentials access token. Then you can do like the following.
 
 ```
 MemberRegistrationRequest memberRegistrationRequest = new MemberRegistrationRequest(...);
 MemberResource registeredMember = SceneClient.getMemberClient().register(memberRegistrationRequest);
 ```
 
-One you have a registered member you can log in with that member. 
+Once you have registered a member, you can swap your client credentials access token for a resource owner access token which will allow you to perform operations for that member. 
 
 ```
 SceneClient.getClientContext().exchangeResourceOwnerCredentialsForAccessToken(registeredMember.getEmail(),
