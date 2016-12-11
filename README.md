@@ -51,7 +51,7 @@ SceneClient.configureClientContext().setBaseUrl("http://api.thescene.co")
 SceneClient.getClientContext().exchangeClientCredentialsForAccessToken();
 ```
 
-###2. To upgrade with resource owner credentials
+###2. To upgrade with oauth2 resource owner credentials
 
 ```
 SceneClient.getClientContext().exchangeResourceOwnerCredentialsForAccessToken(registeredMember.getEmail(),
