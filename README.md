@@ -89,7 +89,15 @@ EventRequest eventRequest = new EventRequest(...);
 SceneClient.getEventClient().createEvent(memberResource, eventRequest);
 
 ```
-###6. List of all clients available from the SceneService object. 
+###6. General principles and a list of all client classes available from the SceneClient object
+
+####General principles
+
+In general, client classes can be used to send `*Request` objects when modifying data, and will receive `*Resource` objects as a response. When making idempotent operations (GET requests), resource objects can be used to GET more resource objects, as each client class will automatically follow HAL links in Resource objects to GET resources that have been requested.
+
+In some cases *Resource objects can be passed to the SceneClient classes to achieve some modifying operation. This is because the client classes sometimes handle the conversion of a Resource object to a Request object internally.
+
+Below is a list of client classes that are available from the object SceneClient
 
 ####AdministraitonClient
 ####CategoryClient
@@ -104,5 +112,35 @@ SceneClient.getEventClient().createEvent(memberResource, eventRequest);
 ####TagClient
 
 
+### Building the project
+
+To build the project you will need the following tools. 
+
+* **Git** [[Download]](https://git-scm.com/downloads)
+* **Maven** [[Download]](https://maven.apache.org/download.cgi)
+* **Java 8 SDK** [[Download]](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+### Make changes to the project
+
+To make changes to the project you will need an IDE
+
+* **An IDE** [[Eclipse Download]](https://eclipse.org/downloads/) or [[Netbeans Download]](https://netbeans.org/downloads/) or [[IntelliJ IDEA Download]](https://www.jetbrains.com/idea/download/)
+* **Lombok** [[Download]](https://projectlombok.org/) The latest version of lombok can be downloaded, or the lombok jar can be found in the root of thescene-spa repository on this page. 
+
+### Clone the project
+
+Clone this project by using the following git command and the HTTPS URL:
+
+    $ git clone https://github.com/TheSceneCo/thescene-spa.git
+
+### Run the project
+
+To run this project, you have to build the whole project in the root module.
+
+    mvn clean install
+
+Then start up the console module (reference client implementation) via spring-boot maven plugin from the console folder.
+
+    mvn spring-boot:run
 
 
