@@ -89,5 +89,20 @@ EventRequest eventRequest = new EventRequest(...);
 SceneClient.getEventClient().createEvent(memberResource, eventRequest);
 
 ```
+###6. List of all clients available from the SceneService object. 
+
+####AdministraitonClient
+####CategoryClient
+####ContentClient
+####EventClient
+####FolderClient
+####ImageClient
+####LocationClient
+####MemberClient
+####MessageClient
+####ProfileClient
+####TagClient
+
+
 
 
