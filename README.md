@@ -129,7 +129,7 @@ To make changes to the project you will need an IDE
 
 Clone this project by using the following git command and the HTTPS URL:
 
-    $ git clone https://github.com/TheSceneCo/thescene-spa.git
+    $ git clone https://github.com/TheSceneCo/thescene-java-client-sdk.git
 
 ### Run the project
 
@@ -142,3 +142,4 @@ Then start up the console module (reference client implementation) via spring-bo
     mvn spring-boot:run
 
 
+Happy coding!
