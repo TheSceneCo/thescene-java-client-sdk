@@ -42,7 +42,7 @@ All API Access can be handled through the SceneClient interface. The SceneClient
 * Management of hal+json hateoas links and rels.
 * The caching of base 'rels'. Links that will not change during the course of a single session of API usage. 
 
-###1. To log in using the client library and oauth2 client credentials: 
+###1. To log in using the client library and oauth2 client credentials
 
 ```
 SceneClient.configureClientContext().setBaseUrl("http://api.thescene.co")
