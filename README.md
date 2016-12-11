@@ -67,7 +67,7 @@ MemberRegistrationRequest memberRegistrationRequest = new MemberRegistrationRequ
 MemberResource registeredMember = SceneClient.getMemberClient().register(memberRegistrationRequest);
 ```
 
-Once you have registered a member, you can swap your client credentials access token for a resource owner access token which will allow you to perform operations for that member. 
+Once you have registered a member, you can swap your client credentials access token for a resource owner access token. You'll need to do this if you want to do anything with your newly registered member.  
 
 ```
 SceneClient.getClientContext().exchangeResourceOwnerCredentialsForAccessToken(registeredMember.getEmail(),
