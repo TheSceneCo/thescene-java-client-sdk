@@ -70,8 +70,7 @@ MemberResource registeredMember = SceneClient.getMemberClient().register(memberR
 Once you have registered a member, you can swap your client credentials access token for a resource owner access token. You'll need to do this if you want to do anything with your newly registered member.  
 
 ```
-SceneClient.getClientContext().exchangeResourceOwnerCredentialsForAccessToken(registeredMember.getEmail(),
-				<enter resource owner password in here>);
+SceneClient.getClientContext().exchangeResourceOwnerCredentialsForAccessToken(registeredMember.getEmail(), <enter resource owner password in here>);
 ```
 
 ###4. To create a new event
