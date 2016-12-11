@@ -38,7 +38,7 @@ Currently there are three modules included in this project.
 
 All API Access can be handled through the SceneClient interface. The SceneClient object manages
 
-* Authentication state.
+* Authorization state.
 * Management of hal+json hateoas links and rels.
 * The caching of base 'rels'. Links that will not change during the course of a single session of API usage. 
 
