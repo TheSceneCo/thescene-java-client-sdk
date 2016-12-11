@@ -73,7 +73,13 @@ Once you have registered a member, you can swap your client credentials access t
 SceneClient.getClientContext().exchangeResourceOwnerCredentialsForAccessToken(registeredMember.getEmail(), <enter resource owner password in here>);
 ```
 
-###4. To create a new event
+###4. To get the member resource for the current client credentials access token
+
+```
+MemberResource memberResourceForCurrentClientCredentialsAccessToken = SceneClient.memberInfo();
+```
+
+###5. To create a new event
 
 Creating a new event can be done as follows
 
