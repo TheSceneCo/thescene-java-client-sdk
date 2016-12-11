@@ -74,4 +74,15 @@ SceneClient.getClientContext().exchangeResourceOwnerCredentialsForAccessToken(re
 				<enter resource owner password in here>);
 ```
 
+###4. To create a new event
+
+Creating a new event can be done as follows
+
+```
+EventRequest eventRequest = new EventRequest(...);
+
+SceneClient.getEventClient().createEvent(memberResource, eventRequest);
+
+```
+
 
