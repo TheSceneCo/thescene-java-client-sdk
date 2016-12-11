@@ -24,8 +24,6 @@ A RESTful HAL+JSON API browser for TheScene.Co API can be found at http://browse
 
 Interested in developing a php application instead? Please see [Yasir you can insert your repository link in here :) ]
 
-#TheScene.Co API Application
-
 ##Project Structure
 
 Currently there are three modules included in this project.
