@@ -36,7 +36,13 @@ Currently there are three modules included in this project.
 
 ##Java API Client Library Usage Examples
 
-1. To log in using the client library
+All API Access can be handled through the SceneClient interface. The SceneClient object manages
+
+* Authentication state.
+* Management of hal+json hateoas links and rels.
+* The caching of base 'rels'. Links that will not change during the course of a single session of API usage. 
+
+1. To log in using the client library and oauth2 client credentials: 
 
 ```
 SceneClient.configureClientContext().setBaseUrl("http://api.thescene.co")
@@ -44,3 +50,28 @@ SceneClient.configureClientContext().setBaseUrl("http://api.thescene.co")
 
 SceneClient.getClientContext().exchangeClientCredentialsForAccessToken();
 ```
+
+2. To upgrade with resource owner credentials
+
+```
+SceneClient.getClientContext().exchangeResourceOwnerCredentialsForAccessToken(registeredMember.getEmail(),
+				"testtest");
+```
+
+3. To register a new member
+
+First establish a client credentials authentication token. Then you can do like the following.
+
+```
+MemberRegistrationRequest memberRegistrationRequest = new MemberRegistrationRequest(...);
+MemberResource registeredMember = SceneClient.getMemberClient().register(memberRegistrationRequest);
+```
+
+One you have a registered member you can log in with that member. 
+
+```
+SceneClient.getClientContext().exchangeResourceOwnerCredentialsForAccessToken(registeredMember.getEmail(),
+				<enter resource owner password in here>);
+```
+
+
