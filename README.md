@@ -30,7 +30,7 @@ Currently there are three modules included in this project.
 
 * **console** A refrence implementation of a java client using TheScene.Co Java Client SDK.
 * **presentation-dto** A collection of data transfer objects that can be used for representing TheScene.Co API requests and responses.
-* **java-api-client-library** A library that takes care of the underlying http fundamentals of connecting to TheScene.Co API. It is this library that is most useful for importing into other java applications, to connect to TheScene.Co API.
+* **java-api-client-library** A library that takes care of the underlying http fundamentals of connecting to TheScene.Co API and also manages all hateoas links and rels. It is this library that is most useful for importing into other java applications, to connect to TheScene.Co API.
 
 ##Java API Client Library Usage Examples
 
