@@ -22,7 +22,7 @@ Swagger documentation for TheScene.Co API can be found at http://docs.thescene.c
 
 A RESTful HAL+JSON API browser for TheScene.Co API can be found at http://browser.thescene.co
 
-Interested in developing a php application instead? Please see [Yasir you can insert your repository link in here :) ]
+Interested in developing a php application instead? Please see https://github.com/logic-master/thescene-php-client-sdk.git
 
 ##Project Structure
 
