@@ -1,6 +1,6 @@
 # TheScene.Co Java Client SDK
 
-##Contact information
+## Contact information
 * **John Deverall** email: john@thescene.co, (skype johndeverall@gmail.com)
 * **Craig Deverall** craig@thescene.co
 * **Georgy Popov** gorge39@gmail.com
@@ -8,7 +8,7 @@
 * **Alexis Garland** alexisgarland@gmail.com
 * **Yaffa Ibreighith** yaffa.ibreghith@gmail.com
 
-##What is it? 
+## What is it? 
 
 This repository contains a java client library to assist in the development of applications using TheScene.Co API. 
 
@@ -32,7 +32,7 @@ Currently there are three modules included in this project.
 * **presentation-dto** A collection of data transfer objects that can be used for representing TheScene.Co API requests and responses.
 * **java-api-client-library** A library that takes care of the underlying http fundamentals of connecting to TheScene.Co API and also manages all hateoas links and rels. It is this library that is most useful for importing into other java applications, to connect to TheScene.Co API.
 
-##Java API Client Library Usage Examples
+## Java API Client Library Usage Examples
 
 All API Access can be handled through the SceneClient interface. The SceneClient object manages
 
@@ -40,7 +40,7 @@ All API Access can be handled through the SceneClient interface. The SceneClient
 * Management of hal+json hateoas links and rels.
 * The caching of base 'rels'. Links that will not change during the course of a single session of API usage. 
 
-###1. To get a client credentials access token using the java api client library
+### 1. To get a client credentials access token using the java api client library
 
 ```
 SceneClient.configureClientContext().setBaseUrl("http://api.thescene.co")
@@ -49,14 +49,14 @@ SceneClient.configureClientContext().setBaseUrl("http://api.thescene.co")
 SceneClient.getClientContext().exchangeClientCredentialsForAccessToken();
 ```
 
-###2. To get a resource owner access token using the java api client library (using resource owner's credentials)
+### 2. To get a resource owner access token using the java api client library (using resource owner's credentials)
 
 ```
 SceneClient.getClientContext().exchangeResourceOwnerCredentialsForAccessToken(registeredMember.getEmail(),
 				"testtest");
 ```
 
-###3. To register a new member
+### 3. To register a new member
 
 First you need a client credentials access token. Then you can do like the following.
 
@@ -71,13 +71,13 @@ Once you have registered a member, you can swap your client credentials access t
 SceneClient.getClientContext().exchangeResourceOwnerCredentialsForAccessToken(registeredMember.getEmail(), <enter resource owner password in here>);
 ```
 
-###4. To get the member resource for the current client credentials access token
+### 4. To get the member resource for the current client credentials access token
 
 ```
 MemberResource memberResourceForCurrentClientCredentialsAccessToken = SceneClient.memberInfo();
 ```
 
-###5. To create a new event
+### 5. To create a new event
 
 Creating a new event can be done as follows
 
@@ -87,7 +87,7 @@ EventRequest eventRequest = new EventRequest(...);
 SceneClient.getEventClient().createEvent(memberResource, eventRequest);
 
 ```
-###6. General principles and a list of all client classes available from the SceneClient object
+### 6. General principles and a list of all client classes available from the SceneClient object
 
 ####General principles
 
