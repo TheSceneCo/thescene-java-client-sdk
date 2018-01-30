@@ -87,7 +87,7 @@ SceneClient.getEventClient().createEvent(memberResource, eventRequest);
 ```
 ### 6. General principles and a list of all client classes available from the SceneClient object
 
-####General principles
+#### General principles
 
 In general, client classes can be used to send `*Request` objects when performing CRUD operations on resources, and will receive `*Resource` objects as a response. When making idempotent operations (GET requests), resource objects can be used to GET more resource objects, as each client class will automatically follow HAL links in Resource objects to GET resources that have been requested.
 
@@ -95,17 +95,17 @@ In some cases *Resource objects can be passed to the SceneClient classes to achi
 
 Below is a list of client classes that are available from the object SceneClient
 
-####AdministraitonClient
-####CategoryClient
-####ContentClient
-####EventClient
-####FolderClient
-####ImageClient
-####LocationClient
-####MemberClient
-####MessageClient
-####ProfileClient
-####TagClient
+#### AdministraitonClient
+#### CategoryClient
+#### ContentClient
+#### EventClient
+#### FolderClient
+#### ImageClient
+#### LocationClient
+#### MemberClient
+#### MessageClient
+#### ProfileClient
+#### TagClient
 
 
 ### Building the project
