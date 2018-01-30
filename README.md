@@ -14,7 +14,7 @@ It may be useful for android or other applications that are built using the java
 
 This software is provided under the GNU Lesser General Public License. See https://www.gnu.org/licenses/lgpl-3.0.en.html for details.
 
-##Useful links
+## Useful links
 
 Swagger documentation for TheScene.Co API can be found at http://docs.thescene.co
 
@@ -22,7 +22,7 @@ A RESTful HAL+JSON API browser for TheScene.Co API can be found at http://browse
 
 Interested in developing a php application instead? Please see https://github.com/logic-master/thescene-php-client-sdk.git
 
-##Project Structure
+## Project Structure
 
 Currently there are three modules included in this project.
 
