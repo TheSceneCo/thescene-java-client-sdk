@@ -2,10 +2,8 @@
 
 ## Contact information
 * **John Deverall** email: john@thescene.co, (skype johndeverall@gmail.com)
-* **Craig Deverall** craig@thescene.co
 * **Georgy Popov** gorge39@gmail.com
 * **Darwin Kurabi** darwin.rocker@gmail.com
-* **Alexis Garland** alexisgarland@gmail.com
 * **Yaffa Ibreighith** yaffa.ibreghith@gmail.com
 
 ## What is it? 
